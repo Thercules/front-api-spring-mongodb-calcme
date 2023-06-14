@@ -1,0 +1,115 @@
+$blue-light: #3498db;
+$blue-dark: #2980b9;
+
+.bg {
+  background-image: url('../../assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(to bottom, $blue-light, $blue-dark);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+  }
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #021B79;
+
+  &:hover {
+    background-color: #0b37d4;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.github-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+
+  .github-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #000;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
